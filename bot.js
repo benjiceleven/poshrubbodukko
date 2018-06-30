@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '.commands') {
-    	message.reply('Commands: .Are you? .ping .Why? .yt .twitch .creator');
+    	message.reply('Commands: .Are you? .ping .Why? .yt .twitch .creator .welcome');
   	}
 });
 
@@ -44,6 +44,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '.creator') {
     	message.reply('Benji Celeven, the most bestest of frens!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '.welcome') {
+    	message.reply('@everyone! Listen up! Welcome me as your new fren!! Plz and thx?');
   	}
 });
 
