@@ -36,7 +36,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '.twitch?') {
+    if (message.content === '.twitch') {
     	message.reply('My Twitch: https://www.twitch.tv/C_011');
   	}
 });
